@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ModifyItemContext" prefHeight="400.0" prefWidth="459.0" styleClass="Order" stylesheets="@../css/Body.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyItemsController">
+   <children>
+      <Label layoutX="94.0" layoutY="14.0" prefHeight="41.0" prefWidth="272.0" text="Modify Item">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="120.0" layoutY="93.0" onAction="#LoadItemData" promptText="Item Id" />
+      <TextField fx:id="txtDescription" layoutX="120.0" layoutY="149.0" promptText="Description" />
+      <TextField fx:id="txtPackSize" layoutX="120.0" layoutY="202.0" promptText="Pack Size" />
+      <TextField fx:id="txtUnitPrice" layoutX="120.0" layoutY="255.0" promptText="Unit price" />
+      <TextField fx:id="txtQtyOnhand" layoutX="120.0" layoutY="313.0" promptText="Qty On Hand" />
+      <JFXButton buttonType="RAISED" layoutX="333.0" layoutY="348.0" onAction="#ModifyItems" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: #5352ed;" text="Modify" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="SystemReportsContext" prefHeight="400.0" prefWidth="548.0" styleClass="Customer" stylesheets="@../css/Body.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SystemreportsController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="175.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" width="299.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="175.0" layoutY="195.0" stroke="BLACK" strokeType="INSIDE" width="203.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="175.0" layoutY="256.0" stroke="BLACK" strokeType="INSIDE" width="203.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="175.0" layoutY="319.0" stroke="BLACK" strokeType="INSIDE" width="227.0" />
+      <Label layoutX="122.0" layoutY="14.0" prefHeight="75.0" prefWidth="335.0" text="System Reports" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="159.0" layoutY="128.0" onAction="#Income" prefHeight="44.0" prefWidth="335.0" ripplerFill="WHITE" text="Daily/Monthly/Annual Income" textFill="#0050ff" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="107.0" layoutY="192.0" onAction="#mostMovableItem" prefHeight="44.0" prefWidth="335.0" ripplerFill="WHITE" text="Most Movable Item" textFill="#0050ff" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="107.0" layoutY="253.0" onAction="#LeastMovableItem" prefHeight="44.0" prefWidth="335.0" ripplerFill="WHITE" text="Least Movable Item" textFill="#0050ff" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="122.0" layoutY="316.0" onAction="#CustomerWiseIncome" prefHeight="44.0" prefWidth="335.0" ripplerFill="WHITE" text="Customer Wise Income" textFill="#0050ff" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="350.0" onAction="#Back" prefHeight="36.0" prefWidth="81.0" style="-fx-background-color: #5352ed;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

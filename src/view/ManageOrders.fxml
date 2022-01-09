@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageOrdersContext" prefHeight="400.0" prefWidth="600.0" styleClass="Order" stylesheets="@../css/Body.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageOrdersController">
+   <children>
+      <Label layoutX="130.0" prefHeight="62.0" prefWidth="353.0" text="Manage Orders">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbCustomer" layoutX="47.0" layoutY="80.0" prefHeight="31.0" prefWidth="166.0" promptText="Customer Id">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <TableView fx:id="tblOrder" layoutX="34.0" layoutY="138.0" prefHeight="200.0" prefWidth="534.0">
+        <columns>
+          <TableColumn fx:id="colItemId" prefWidth="125.0" text="Item Id" />
+          <TableColumn fx:id="colDescription" prefWidth="200.0" text="Description" />
+            <TableColumn fx:id="colQty" prefWidth="95.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="109.0" text="Unit Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="Qty" layoutX="461.0" layoutY="80.0" prefHeight="31.0" prefWidth="123.0" promptText="New Qty" />
+      <JFXButton buttonType="RAISED" layoutX="191.0" layoutY="355.0" onAction="#removeItem" style="-fx-background-color: #e58e26;" text="Remove" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="317.0" layoutY="355.0" onAction="#CancelOrder" style="-fx-background-color: #e58e26;" text="Cancel Order" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="475.0" layoutY="355.0" onAction="#EditOrder" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #e58e26;" text="Edit Order" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ComboBox fx:id="cmbOrder" layoutX="239.0" layoutY="80.0" prefHeight="31.0" prefWidth="123.0" promptText="Order Id">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <JFXButton buttonType="RAISED" layoutX="34.0" layoutY="355.0" onAction="#Back" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: #5352ed;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

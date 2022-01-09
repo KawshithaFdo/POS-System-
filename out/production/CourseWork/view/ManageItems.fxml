@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManageItemsContext" prefHeight="400.0" prefWidth="548.0" styleClass="Customer" stylesheets="@../css/Body.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageItemsController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="175.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" width="224.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="175.0" layoutY="195.0" stroke="BLACK" strokeType="INSIDE" width="224.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="38.0" layoutX="175.0" layoutY="256.0" stroke="BLACK" strokeType="INSIDE" width="203.0" />
+        <Label layoutX="122.0" layoutY="14.0" prefHeight="75.0" prefWidth="335.0" text="Manage Items" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="43.0" />
+            </font>
+        </Label>
+        <JFXButton buttonType="RAISED" layoutX="174.0" layoutY="127.0" onAction="#RegisterNewItem" prefHeight="44.0" prefWidth="224.0" ripplerFill="WHITE" text="Register New Item" textFill="#0050ff" underline="true">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="182.0" layoutY="192.0" onAction="#ModifyItems" prefHeight="44.0" prefWidth="216.0" ripplerFill="WHITE" text="Modify Item Details" textFill="#0050ff" underline="true">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="177.0" layoutY="253.0" onAction="#RemoveItems" prefHeight="44.0" prefWidth="203.0" ripplerFill="WHITE" text="Remove Items" textFill="#0050ff" underline="true">
+            <font>
+                <Font name="System Bold Italic" size="20.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="350.0" onAction="#Back" prefHeight="36.0" prefWidth="81.0" style="-fx-background-color: #5352ed;" text="Back" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </JFXButton>
+    </children>
+</AnchorPane>

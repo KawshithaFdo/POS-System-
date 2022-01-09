@@ -1,0 +1,16 @@
+.bodyAdmin {
+    -fx-background-image: url("/asserts/Image_1.jpg");
+    -fx-background-size: 100% 100%;
+}
+.Cashier {
+    -fx-background-image: url("/asserts/Image_7.jpg");
+    -fx-background-size: 100% 100%;
+}
+.Customer {
+    -fx-background-image: url("/asserts/Image_5.jpg");
+    -fx-background-size: 100% 100%;
+}
+.Order {
+    -fx-background-image: url("/asserts/Image_8.jpg");
+    -fx-background-size: 100% 100%;
+}

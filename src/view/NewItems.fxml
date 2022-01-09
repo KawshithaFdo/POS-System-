@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AddNewItemContext" prefHeight="400.0" prefWidth="455.0" styleClass="Order" stylesheets="@../css/Body.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewItemController">
+   <children>
+      <Label layoutX="75.0" layoutY="14.0" prefHeight="65.0" prefWidth="276.0" text="Add New Item">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="101.0" layoutY="93.0" prefHeight="31.0" prefWidth="201.0" promptText="Item Id" />
+      <TextField fx:id="txtDescription" layoutX="101.0" layoutY="150.0" prefHeight="31.0" prefWidth="201.0" promptText="Item Description" />
+      <TextField fx:id="txtPackSize" layoutX="101.0" layoutY="200.0" prefHeight="31.0" prefWidth="201.0" promptText="PackSize" />
+      <TextField fx:id="txtUnitPrice" layoutX="101.0" layoutY="246.0" prefHeight="31.0" prefWidth="201.0" promptText="Unit Price" />
+      <TextField fx:id="txtqtyOnHand" layoutX="101.0" layoutY="298.0" prefHeight="31.0" prefWidth="201.0" promptText="Qty On hand" />
+      <JFXButton buttonType="RAISED" layoutX="302.0" layoutY="341.0" onAction="#AddItem" prefHeight="31.0" prefWidth="119.0" style="-fx-background-color: #5352ed;" text="Add Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

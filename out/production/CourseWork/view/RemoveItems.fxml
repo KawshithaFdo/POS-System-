@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="348.0" prefWidth="450.0" styleClass="Order" stylesheets="@../css/Body.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RemoveItemsController">
+   <children>
+      <Label layoutX="94.0" layoutY="14.0" prefHeight="53.0" prefWidth="253.0" text="Remove Items">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="108.0" layoutY="118.0" onAction="#LoadItemData" promptText="Item Id" />
+      <TextField fx:id="txtDescription" layoutX="108.0" layoutY="185.0" promptText="Description" />
+      <JFXButton buttonType="RAISED" layoutX="275.0" layoutY="279.0" onAction="#RemoveItems" style="-fx-background-color: #5352ed;" text="Remove" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
